@@ -1,2 +1,2 @@
 # mas-designs.github.io
-Website for mas-designs
+This is my minimal portfolio website, full website coming soon.
