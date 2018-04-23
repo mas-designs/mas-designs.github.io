@@ -1,3 +1,45 @@
+@font-face{
+    font-family:'Bebas Neue';
+    src:url('../fonts/BebasNeue.otf');
+    font-weight:normal;
+}
 body{
-    background-color:black;
+    background-color:#232323;
+}
+
+#mas_logo{
+
+}
+@media only screen and (max-width: 420px) {
+    #mainpage{
+        display:flex;
+        margin-left:auto;
+        width:360px;
+    }
+    #mainpage > section{
+        width:360px;
+        flex-direction:column;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 1024px) {
+    #mainpage{
+        display:flex;
+        margin-left:auto;
+        width:870px;
+    }
+    #mainpage > section{
+        width:870px;
+        flex-direction:column;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    #mainpage{
+        display:flex;
+        margin-left:auto;
+        width:960px;
+    }
+    #mainpage > section{
+        width:960px;
+        flex-direction:column;
+    }
 }
