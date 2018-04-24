@@ -160,8 +160,11 @@ span.underline{
 }
 
 @media only screen and (max-width: 420px) {
+    p{
+        padding:10px;
+    }
     #about > article > p {
-        line-height:100%;
+        line-height:120%;
         font-size:25px;
     }
 }
