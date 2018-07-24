@@ -1,6 +1,6 @@
 const pageCache = 'mas-cache';
 const filesToCache = [
-    'css/page.css',        
+    'css/github.css',
     'fonts/BebasNeue.otf',    
     'img/logo.png',
     'index.html'    
