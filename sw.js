@@ -6,11 +6,22 @@ const filesToCache = [
     'index.html'    
 ];
 self.addEventListener('install', function(event) {
-    console.log('Attempting to install service worker and cache static assets');
     event.waitUntil(
         caches.open(pageCache)
             .then(function(cache) {
-                return cache.addAll(filesToCache);
-            }).catch((error)=> console.log('caches open: ',error))
+                return cache.addAll(urlsToCache);
+            })
+    );
+});
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response) {
+                    if (response) {
+                        return response;
+                    }
+                    return fetch(event.request);
+                }
+            )
     );
 });
