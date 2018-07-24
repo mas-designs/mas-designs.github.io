@@ -4,7 +4,8 @@ const filesToCache = [
     'fonts/BebasNeue.otf',    
     'img/logo.png',
     'index.html',
-    '/'
+    '/',
+    '/sw.js'
 ];
 self.addEventListener('install', function(event) {
     event.waitUntil(
