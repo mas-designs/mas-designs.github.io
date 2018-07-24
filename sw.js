@@ -3,7 +3,8 @@ const filesToCache = [
     'css/github.css',
     'fonts/BebasNeue.otf',    
     'img/logo.png',
-    'index.html'    
+    'index.html',
+    '/'
 ];
 self.addEventListener('install', function(event) {
     event.waitUntil(
