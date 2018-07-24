@@ -4,71 +4,39 @@
     font-weight:normal;
 }
 html,body{
-    height:100%;
-    margin:0;
+	margin:0;
+	padding:0;
 }
 body{
-    background-color:#232323;
+    background-color:#353535;        
 }
-section{
-    text-align:center;
-    height:100vh;
-    background-color:#232323;
-    font-family: 'Montserrat', sans-serif;
+main#page{
+	display:flex;
+    flex-direction:column;    	    
+}
+section{	
+	width:100%;
+	height:100vh;
+	font-family: 'Montserrat', sans-serif;
     color:#fefefe;
-}
-section.divider{
-    height:25vh;
-    background-color:#fff;
-}
-.sectionHeading{
-    font-family: 'Montserrat', sans-serif;
-    color:#fefefe;
-    text-align:right;
-    margin-right:1em;
-}
-span.underline{
-    border-bottom:1px solid white;
-}
-#logo_welcome{
-
-}
-#logo_header{
-    font-family:'Bebas Neue';
-    color:#fefefe;
-    font-size:10em;
     text-align:center;
-    margin-top:28%;
-    margin-bottom:0px;
 }
-#logo_flipped{
-    font-family:'Bebas Neue';
-    color:rgba(255,255,255,0.7);
-    font-size:10em;
-    text-align:center;
-    -moz-transform: scale(1, -1);
-    -webkit-transform: scale(1, -1);
-    -o-transform: scale(1, -1);
-    -ms-transform: scale(1, -1);
-    transform: scale(1, -1);
-    margin-top:-91px;
-    margin-bottom:0px;
+#welcome{
+	position:relative;
+}
+#masLogo{
+	margin: 0;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
 }
 #about{
-
+    text-align:center;
 }
 #about > article{
-    padding-top:10%;
-}
-#about > article > img{
-    margin-top:50px;
-    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(50%);
-    cursor:pointer;
-}
-#about > article > img:hover{
-    -webkit-filter: none; /* Safari 6.0 - 9.0 */
-    filter: none;
+    padding-top:20%;
 }
 #about > article > h2 {
     font-size:2em;
@@ -85,9 +53,9 @@ span.underline{
 #about > article > p > a:hover{
     text-decoration:underline;
 }
-
 #contact > p{
-    padding-top:10%;
+    text-align:center;
+    padding-top:20%;
     line-height:300%;
     font-size:2em;
 }
@@ -109,7 +77,6 @@ span.underline{
 #twitter_logo{
     height:48px;
 }
-
 .arrows {
     width: 60px;
     height: 72px;
@@ -158,15 +125,6 @@ span.underline{
     animation-delay:0s;
     -webkit-animation-delay:0s; /* Safari Chrome */
 }
-
-@media only screen and (max-width: 420px) {
-    p{
-        padding:10px;
-    }
-    #about > article > p {
-        line-height:120%;
-        font-size:25px;
-    }
+#contact{
+	
 }
-@media only screen and (min-width: 421px) and (max-width: 1024px) {}
-@media only screen and (min-width: 1025px) {}
